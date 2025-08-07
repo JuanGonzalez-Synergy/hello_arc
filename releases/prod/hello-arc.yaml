@@ -3,3 +3,22 @@ kind: HelmRelease
 metadata:
   name: hello-arc
   namespace: prod
+spec:
+  interval: 5m
+  releaseName: hello-arc-prod
+  chart:
+    spec:
+      chart: charts/hello-arc
+      sourceRef:
+        kind: GitRepository
+        name: hello-arc
+        namespace: prod
+      interval: 1m
+  values:
+    image:
+      repository: JuanGonzalez-Synergy/hello-arc
+      tag: latest
+    replicaCount: 1
+    env:
+      name: MESSAGE
+      value: Azure Arc enabled K8s GitOps Demo!
