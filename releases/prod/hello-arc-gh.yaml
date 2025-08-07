@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: hello-arc
+  namespace: prod
+spec:
+  interval: 1m0s
+  url: https://github.com/likamrat/hello_arc.git
+  ref:
+    branch: master
