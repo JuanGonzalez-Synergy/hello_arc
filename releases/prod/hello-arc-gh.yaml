@@ -2,7 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
   name: hello-arc
-  namespace: prod
+  namespace: cluster-config
 spec:
   interval: 1m0s
   url: https://github.com/JuanGonzalez-Synergy/hello_arc.git
