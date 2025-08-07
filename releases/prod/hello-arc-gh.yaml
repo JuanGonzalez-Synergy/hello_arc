@@ -5,6 +5,6 @@ metadata:
   namespace: prod
 spec:
   interval: 1m0s
-  url: https://github.com/likamrat/hello_arc.git
+  url: https://github.com/JuanGonzalez-Synergy/hello_arc.git
   ref:
     branch: master
