@@ -9,10 +9,10 @@ spec:
   chart:
     spec:
       chart: charts/hello-arc
+      version: '3.*'
       sourceRef:
         kind: GitRepository
         name: hello-arc
-        namespace: prod
       interval: 1m
   values:
     image:
