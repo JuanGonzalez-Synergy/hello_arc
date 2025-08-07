@@ -6,6 +6,7 @@ metadata:
 spec:
   releaseName: hello-arc-prod
   chart:
+    version: '3.*'
     git: https://github.com/JuanGonzalez-Synergy/hello_arc.git
     path: charts/hello-arc
     ref: master
